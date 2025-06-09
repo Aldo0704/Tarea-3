@@ -11,12 +11,12 @@ body{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       color: #333;
-      background-color: #3498db;
+      background-color: #c99956;
       min-height: 100vh;
       padding: 20px;
 }
 #contenedorGeneral{
-background-color: #00ff84;
+background-color: #fab1a0;
     .encabezadoPagina{
         background-color: #ffffff;
         margin: 20px 60px 20px 60px;
@@ -32,10 +32,10 @@ background-color: #00ff84;
         }
     }
     .cuerpoPagina{
-        background-color: #ff0000;
+        background-color: #fab1a0;
         padding-top: 0px;
         .contenido{
-            background-color: #8e44ad;
+            background-color:#82ccdd;
             margin: 50px 60px 20px 60px;
             padding: 0 15px 15px 15px;
             text-align: justify;
@@ -57,7 +57,7 @@ background-color: #00ff84;
             }
         }
         .definición{
-            background-color: #8e44ad;
+            background-color: #82ccdd;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 15px;
             text-align: justify;
@@ -65,7 +65,7 @@ background-color: #00ff84;
             border-radius: 10px; 
         }
         .listaOrdenada{
-            background-color: #8e44ad;
+            background-color: #82ccdd;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
@@ -73,7 +73,7 @@ background-color: #00ff84;
             border-radius: 10px;
         }
         .listaDesordenada{
-            background-color: #8e44ad;
+            background-color: #82ccdd;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
@@ -81,7 +81,7 @@ background-color: #00ff84;
             border-radius: 10px;
         }
         .content{
-            background-color: #8e44ad;
+            background-color: #ffeaa7;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 15px;
             text-align: justify;
@@ -102,15 +102,15 @@ background-color: #00ff84;
             }
         }
         .listaOrd{
-            background-color: #8e44ad;
+            background-color: #ffeaa7;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
-            border: 3px solid #8e44ad;
+            border: 3px solid #000000;
             border-radius: 10px;
         }
         .listaDesor{
-            background-color: #8e44ad;
+            background-color: #ffeaa7;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
@@ -118,7 +118,7 @@ background-color: #00ff84;
             border-radius: 10px; 
         }
         .tabla{
-            background-color: #8e44ad;
+            background-color: #ffffff;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 15px;
             text-align: justify;
@@ -126,7 +126,7 @@ background-color: #00ff84;
             border-radius: 10px; 
         }
         .use{
-            background-color: #8e44ad;
+            background-color: #82ccdd;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
@@ -134,7 +134,7 @@ background-color: #00ff84;
             border-radius: 10px;  
         }
         .useWhen{
-            background-color: #8e44ad;
+            background-color: #ffeaa7;
             margin: 0px 60px 20px 60px;
             padding: 0 15px 15px 25px;
             text-align: justify;
@@ -143,7 +143,7 @@ background-color: #00ff84;
         }
         .ejemplosBem{
             .usarBem{
-                background-color: #8e44ad;
+                background-color: #82ccdd;
                 margin: 0px 60px 20px 60px;
                 padding: 0 15px 15px 25px;
                 text-align: justify;
