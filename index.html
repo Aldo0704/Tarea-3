@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología BEM y camelCase</title>
+    <link rel="shortcut icon" href="imagenes/gerbdevSinfondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <main id="contenedorGeneral">
+        <!-- introducción -->
+        <header class="encabezadoPagina">
+            <h1 class="encabezadoPagina__title">La Metodología BEM y CamelCase</h1>
+            <p class="encabezadoPagina__subtitle">En mi página web daremos una explicación de cada metodología, mostrando las diferencias de cada uno para asi comprenderlo y manejarlo de una manera muy eficiente.</p>
+        </header>
+        <!-- BEM definición-->
+        <section class="cuerpoPagina">
+            <section class="contenido">
+                <h2 id="contenido__titulo"><u>Metodología BEM</u><h2></h2>
+                    <p class="contenido__informacion">
+                        <b>BEM (Block, Element, Modifier o Bloque, Elemento, Modificador)</b> es una metodología ágil de desarrollo basada en componentes. Fue creada por la empresa    
+                         <mark class="resaltado">Yandex</mark> 
+                        para desarrollar sitios en poco tiempo y con un soporte de largo plazo. El objetivo final de BEM es dividir la interfaz de usuario en bloques independientes para crear componentes escalables y reutilizables. Propone un estilo descriptivo para nombrar cada una de las clases a utilizar, permitiendo así crear un estructura de código consistente.
+                    </p>
+                    <p class="titulo__información">
+                        Para lograr su objetivo, la metodología se centra en la reutilización de código. Además, busca otorgar un mayor entendimiento hacia qué nos referimos cada vez que construimos un nuevo proyecto. Como resultado, crea una documentación explícita en cada nueva declaración. BEM tiene como horizonte modularizar lo máximo posible cada uno de los bloques de código dispuesto. Se centra en tres parámetros o variables posibles: Bloques (div, section, article, ul, ol, etc.), elementos (a, button, li, span, etc.) y modificadores. Estos últimos se definen de acuerdo a la posterior utilización que haga el desarrollador a cargo.
+                    </p>
+            </section>
+            <section class="seccionImagen">
+                <div class="contenedorImagen">
+                    <img src="imagenes/w=750,h=422.avif" alt="">
+                </div>
+            </section>
+            <section class="definición">
+                <h2 class="definicion__titulo-principal"><u>Bloques, Elementos y Modificadores (BEM)</u></h2>
+                <h3 class="definicion__subtitulo--bloques"><u>Bloques</u></h3>
+                    <p class="definicion__informacion--bloques">
+                        Es un contenedor donde se encontrarán los diferentes elementos. Por ejemplo, un encabezado (header), una barra lateral (sidebar/aside) un área de contenido principal (main) y un pie de página (footer), se consideraría cada uno como un bloque.
+                    </p>
+                    <p class="definicion__informacion--bloques">
+                        El bloque de elementos corresponde a la raíz de la clase y deberá ir siempre primero. Cuando ya está definido es posible nombrar los elementos que compondrán la estructura final y su contenido.
+                    </p>
+                <h3 class="definicion__subtitulo--elementos"><u>Elementos</u></h3>
+                    <p class="definicion__informacion--elementos">
+                        El elemento es una de las variadas piezas que compondrán la estructura de un bloque. El bloque es el todo y los elementos son las piezas de este bloque.
+                    </p>
+                    <p class="definicion__informacion--elementos">
+                        De acuerdo a la metodología BEM, cada elemento se escribe después del bloque padre, usando dos guiones bajos:
+                    </p>
+                    <p class="definicion__informacion--elementos">
+                        Al convertirse en el centro de los nombres de las clases, los elementos ayudan a entender cómo estructurar y manejar las hojas de estilos una vez que se empiece a diseñar el proyecto. Por esto, es importante usar nombres claros y precisos.
+                    </p>
+                <h3 class="definicion__subtitulo--modificadores"><u>Modificadores</u></h3>
+                    <p class="definicion__informacion--modificadores">
+                        El ejercicio de nombrar las clases sirve para que los elementos puedan repetirse. Si los elementos son los mismos, no será necesario escribir nuevas clases en otras áreas del sitio.
+                    </p>
+                    <p class="definicion__informacion--modificadores">
+                        Para modificar el estilo de un elemento específico, existen los modificadores. Estos se usan agregando un doble guión justo después del elemento o bloque que se quiere modificar:
+                    </p>                                       
+            </section>
+            <!-- lista ordenada de ventajas de usar BEM -->
+            <section class="listaOrdenada">
+                <h2 class="ordenada"><u>Ventajas de usar la Metodología BEM</u></h2>
+                    <p class="ordenada__descripción">
+                        La metodología BEM se encuentra en constante evolución, pero ha demostrado su eficiencia al establecer una buena jerarquía en el desarrollo de plataformas.   
+                    </p>
+                    <p class="ordenada__descripción">
+                        En el tiempo que llevamos usándola hemos percibido las siguientes ventajas:
+                    </p>
+                    <ol>
+                        <li><b>Añade especificidad:</b> Usa un selector único para cada regla, lo que permite reducirla y hacer menos repeticiones.</li>
+                        <li><b>Aumenta la independencia:</b> Los bloques se pueden mover a cualquier parte del documento, sin afectar los estilos.</li>
+                        <li><b>Mejora la herencia múltiple:</b> Se puede cambiar cualquiera de las tres partidas sin afectar a las demás.</li>
+                        <li><b>Permite la reutilización:</b> Es posible reciclar ciertas áreas de código desde un proyecto hacia otro, esto debido a la no existencia de dependencias mayores en cuanto a la implementación de cada uno de los bloques estructurados.</li>
+                        <li><b>Entrega simplicidad:</b> Permite un fácil entendimiento una vez conocido el proceso lógico sobre el cual se basa. A su vez, las convenciones a la hora de nombrar las clases permiten tener un control absoluto al saber a qué, quién y hacia dónde hacemos referencia dentro de una estructura.</li>
+                    </ol>
+            </section>
+            <!-- lista desordenada de ejemplos de código usando BEM  -->
+            <section class="listaDesordenada">
+                <h2 class="desordenada"><u>Ejemplos de código usando BEM</u></h2>
+                <ul>
+                    <li>
+                        <code>&lt;div class="menu"&gt;&lt;/div&gt;<p>Bloque</p></code> <!-- Bloque -->
+                    </li>
+                    <li>
+                        <code>&lt;div class="menu__item"&gt;&lt;/div&gt;<p>Elemento del bloque</p></code> <!-- Elemento del bloque -->
+                    </li>
+                    <li>
+                        <code>&lt;div class="menu__item--activo"&gt;&lt;/div&gt;<p>Modificador</p></code> <!-- Modificador -->
+                    </li>
+                    <li>
+                        <code>&lt;button class="boton boton--grande"&gt;Enviar&lt;/button&gt;<p>Bloque con modificador</p></code> <!-- Bloque con modificador -->
+                    </li>
+                    <li>
+                        <code>&lt;div class="tarjeta__titulo tarjeta__titulo--rojo"&gt;Hola&lt;/div&gt;<p>Elemento con modificador</p></code> <!-- Elemento con modificador -->
+                    </li>
+                </ul>
+            </section>
+            <!-- camelCase definición -->
+            <section class="content">
+                <h2 class="camelCase"><u>CamelCase</u></h2>
+                    <p class="camelCase__información">
+                        El camelcase es un estilo de escritura utilizado en la programación para nombrar variables y funciones. Su nombre proviene de la apariencia que tiene una palabra en este formato, similar a las jorobas de un camello. Este estilo es especialmente popular en lenguajes como Java, JavaScript, C#, y muchos otros.
+                    </p>
+                    <p class="camelCase__información">
+                        El camelcase no solo se limita a la programación, sino que también se ha extendido a otras áreas, como la escritura de nombres de dominio en la web, la definición de identificadores en XML o la creación de hashtags en redes sociales. Su versatilidad y simplicidad lo convierten en una opción atractiva para mantener la coherencia y claridad en la comunicación, tanto en el ámbito técnico como en el cotidiano. Su popularidad y amplio uso en diversas plataformas lo hacen una habilidad valiosa para cualquier aspirante a desarrollador o profesional del mundo digital.
+                    </p>
+                    <p class="camelCase__información">
+                        En el lenguaje de programación Java, el camelCase se usa ampliamente para nombrar variables, métodos y clases, siguiendo dos convenciones principales. El Upper Camel Case, también llamado PascalCase, se utiliza para nombrar clases y tipos. En este estilo, cada palabra del identificador comienza con mayúscula, incluida la primera. Esto permite diferenciar visualmente las clases y estructuras principales dentro del código. Por otro lado, el Lower Camel Case se emplea para nombrar variables y métodos. En este caso, la primera palabra inicia con minúscula y las siguientes con mayúscula. Este formato es común no solo en Java, sino también en otros lenguajes como JavaScript y C#, ya que mejora la legibilidad y mantiene una convención clara dentro del código.
+                    </p>
+            </section>
+            <section class="imagenTwo">
+                <div class="imagen__two">
+                    <img src="imagenes/Camelcase.webp" alt="">
+                </div>
+            </section>
+            <!-- lista ordenada camelCase -->
+            <section class="listaOrd">
+                <h2 class="orde"><u>Situaciones donde se usa camelCase</u></h2>
+                    <ol>
+                        <li>Se utiliza para que los identificadores se vuelven más legibles y fáciles de entender para cualquier persona que esté revisando el código. Esto hace que sea más sencillo identificar la función y el propósito de cada variable, método o clase, lo que a su vez simplifica el proceso de mantenimiento del código a largo plazo. Los desarrolladores pueden entender rápidamente qué hace cada parte del código, lo que reduce el tiempo necesario para realizar cambios o correcciones y disminuye la probabilidad de introducir errores.</li>
+                        <li>El camelCase ayuda a mantener una nomenclatura coherente en los proyectos, lo que facilita la colaboración entre desarrolladores. Al seguir las mismas reglas, se mejora la comunicación y comprensión del código, especialmente en proyectos grandes. Esta consistencia evita confusiones y errores, haciendo el desarrollo más eficiente y ordenado.</li>
+                        <li>El camelCase evita confusiones entre variables con nombres similares al diferenciarse también por el uso de mayúsculas. Esto ayuda a mantener la integridad del código y previene errores que podrían causar fallos o comportamientos inesperados en el programa.</li>
+                    </ol>
+            </section>
+            <!-- lista desordenada camelCase -->
+            <section class="listaDesor">
+                <h2 class="desorde"><u>Ejemplos de código usando camelCase</u></h2>
+                    <ul>
+                        <li>nombreUsuario</li>
+                        <li>obtenerDatosDelCliente</li>
+                        <li>precioTotal</li>
+                        <li>calcularPromedioFinal</li>
+                        <li>mostrarMensajeDeError</li>
+                        <li>numeroDeIntentos</li>
+                        <li>fechaDeNacimiento</li>
+                        <li>validarCorreoElectronico</li>
+                    </ul>
+            </section>
+            <!-- tabla conparativa BEM y camelCase -->
+            <section class="tabla">
+                <h2><u>Tabla Comparativa De La Metodología BEM y CamelCase</u></h2>
+                <table border="1">
+                        <thead>
+                            <tr>
+                                <th><b>Característica</b></th>
+                                <th>BEM</th>
+                                <th>camelCase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Significado</b></td>
+                                <td>Block Element Modifier</td>
+                                <td>No tiene siglas; se refiere al uso de mayúsculas internas</td>
+                            </tr>
+                            <tr>
+                                <td><b>Uso principal</b></td>
+                                <td>Organización de nombres de clases CSS</td>
+                                <td>Nombres de variables, funciones o métodos</td>
+                            </tr
+                            <tr>
+                                <td><b>Estructura</b></td>
+                                <td>bloque__elemento--modificador</td>
+                                <td>nombreVariable, nombreFuncionEjemplo</td>
+                            </tr
+                            <tr>
+                                <td><b>Objetivo</b></td>
+                                <td>Crear una estructura CSS clara y escalable</td>
+                                <td>Mejorar legibilidad y consistencia en código</td>
+                            </tr
+                            <tr>
+                                <td><b>Lenguajes usados</b></td>
+                                <td>HTML + CSS</td>
+                                <td>Java, JavaScript, C#, Python, entre otros</td>
+                            </tr
+                            <tr>
+                                <td><b>Visibilidad visual</b></td>
+                                <td>Claramente separa bloques, elementos y estados</td>
+                                <td>Se ve como una sola palabra con mayúsculas internas</td>
+                            </tr
+                            <tr>
+                                <td><b>Ejemplo</b></td>
+                                <td>boton__icono--activo</td>
+                                <td>nombreUsuario, calcularSuma</td>
+                            </tr
+                        </tbody>
+                </table>
+            </section>
+            <!-- cuando isar BEM -->
+            <section class="use">
+                <h2 class="usar"><u>¿Cuándo usar BEM?</u></h2>
+                    <p class="usar__información">
+                        Usa BEM cuando estés trabajando con HTML y CSS, especialmente si:
+                    </p>
+                        <ul>
+                            <li>Estás creando sitios web con muchos estilos.</li>
+                            <li>Quieres que tus clases CSS estén bien organizadas.</li>
+                            <li>Estás trabajando en equipo y todos deben entender las clases.</li>
+                            <li>Quieres evitar conflictos o repeticiones de nombres de clases.</li>
+                        </ul>
+            </section>
+            <!-- cuando usar camelCase -->
+            <section class="useWhen">
+                <h2 class="usarCuando"><u>¿Cuándo usar camelCase?</u></h2>
+                    <p class="usarCuando__información">
+                        Usa camelCase cuando estés programando con Java, JavaScript, Python, C#, etc., especialmente para:
+                    </p>
+                        <ul>
+                            <li>Nombrar variables, funciones, métodos o objetos.</li>
+                            <li>Seguir buenas prácticas de escritura de código.</li>
+                            <li>Hacer que los nombres sean fáciles de leer.</li>
+                        </ul>
+            </section>
+            <!-- ejemplos de BEM usando css -->
+            <section class="ejemplosBem">
+                <h2 class="usarBem"><u>Ejemplo de BEM usando css: Tarjeta digital del estudiante.</u></h2>
+            </section>
+            <section class="business-card">
+                <!--aca va el encabezado de la tarjeta  -->
+                <section class="header">
+                    <figure class="profile">
+                            <figcaption class="profile__info">
+                                <h1 class="profile__name">Aldo David Tantavilca Razzo</h1>
+                                <p class="profile__title">Estudiante</p>
+                            </figcaption>
+                    </figure>
+                </section>
+                <!-- esteS es el cuerpo o conendio de la tarjeta -->
+                <section class="content">
+                    <section class="contact">
+                        <h2 class="contact__heading">Contacto</h2>
+                        <div class="contact__list">
+                            <div class="contact__item">
+                                <span class="contact__label">Email:</span>
+                                <span class="contact__value">david01tanta123@gmail.com</span>
+                            </div>
+                            <div class="contact__item">
+                                <span class="contact__label">Teléfono:</span>
+                                <span class="contact__value">+51 945 847 135</span>
+                            </div>
+                            <div class="contact__item">
+                                <span class="contact__label">Ubicación:</span>
+                                <span class="contact__value">Lima, Perú</span>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- aca ira el pie de página de la tarjeta -->
+                <section class="footer">
+                        <p class="footer__quote">
+                        "No te enfoques en lo malo, solo deja ir el pasado y camina hacia el futuro"
+                        </p>
+                </section>
+            </section>>
+        </section>
+        <!-- footer -->
+        <footer class="pag">
+            <p class="piePagina">
+                Las fuentes de donde saque la información, viene de las paginas:
+            </p>
+            <p class="linkOne">
+                <a href="https://blog.ida.cl/desarrollo/metodologia-bem-desarrollo-front-end/" target="_blank">Link de la fuente de información de la Metodología BEM</a>
+            </p>
+            <p class="linkTwo">
+                <a href="https://keepcoding.io/blog/camelcase-que-es-como-funciona-y-beneficios/" target="_blank">Link de la fuente de información de camelCase</a>
+            </p>
+        </footer>
+    </main>        
+</body>
+</html>
